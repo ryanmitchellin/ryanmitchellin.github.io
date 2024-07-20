@@ -136,13 +136,9 @@
     font-size: 50px;
   }
 
-  .contact-title img {
-    width: 130px;
-    margin-right: -20px;
-  }
-
   .contact-section {
     flex-direction: column;
+    gap: 70px;
   }
 
   .contact-left h1 {
@@ -162,6 +158,7 @@
   }
 
   .contact-right label {
+    width: 500px;
     font-size: 20px;
   }
 

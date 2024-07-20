@@ -117,7 +117,6 @@
 
 @media (max-width: 768px) {
   .about {
-    gap: 80px;
     margin: 50px 70px;
     align-items: start;
   }
@@ -125,11 +124,6 @@
   .about-title h1 {
     font-size: 50px;
     padding: 0;
-  }
-
-  .about-title img {
-    width: 130px;
-    right: -20px;
   }
 
   .about-sections {

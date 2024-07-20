@@ -60,6 +60,10 @@
     margin: 20px 50px;
   }
 
+  .nav-logo {
+    width: 150px;
+  }
+
   .nav-connect {
     display: none;
   }

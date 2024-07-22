@@ -15,7 +15,11 @@ const About = () => {
           className="arrow-icon"
         />
         <h1>About me</h1>
-        <FontAwesomeIcon icon={faAnglesLeft} style={{ color: "orange" }} />
+        <FontAwesomeIcon
+          icon={faAnglesLeft}
+          style={{ color: "orange" }}
+          className="arrow-icon"
+        />
       </div>
       <div className="about-sections">
         <div className="about-left">

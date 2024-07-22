@@ -105,16 +105,15 @@
 
 @media (max-width: 768px) {
   .projects {
-    align-items: start;
     gap: 70px;
-    margin: 20px 70px;
+    margin: 30px 70px;
   }
 
   .projects-title h1 {
     padding: 0;
     font-size: 50px;
   }
-  
+
   .projects-format {
     gap: 20px;
     padding: 32px;
@@ -133,5 +132,41 @@
   .projects-container {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .projects {
+    gap: 70px;
+    margin: 30px 70px;
+  }
+
+  .projects-title h1 {
+    padding: 0;
+    font-size: 30px;
+  }
+
+  .arrow-icon {
+    width: 40px;
+  }
+
+  .projects-format {
+    gap: 20px;
+    padding: 32px;
+  }
+
+  .projects-format h2 {
+    font-size: 28px;
+  }
+
+  .projects-format p {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 300px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 5px;
   }
 }

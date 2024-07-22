@@ -3,6 +3,7 @@ import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import menu_open from "../../assets/menu_open.svg";
 import menu_close from "../../assets/menu_close.svg";
@@ -35,7 +36,18 @@ const Navbar = () => {
             <p onClick={() => setMenu("home")}>Home</p>
           </AnchorLink>
           {menu === "home" ? (
-            <FontAwesomeIcon icon={faAnglesUp} style={{ color: "orange" }} />
+            <>
+              <FontAwesomeIcon
+                icon={faAnglesUp}
+                style={{ color: "orange" }}
+                className="arrow-up"
+              />
+              <FontAwesomeIcon
+                icon={faAnglesLeft}
+                style={{ color: "orange" }}
+                className="arrow-left"
+              />
+            </>
           ) : (
             <></>
           )}
@@ -45,7 +57,18 @@ const Navbar = () => {
             <p onClick={() => setMenu("about")}>About</p>
           </AnchorLink>
           {menu === "about" ? (
-            <FontAwesomeIcon icon={faAnglesUp} style={{ color: "orange" }} />
+            <>
+              <FontAwesomeIcon
+                icon={faAnglesUp}
+                style={{ color: "orange" }}
+                className="arrow-up"
+              />
+              <FontAwesomeIcon
+                icon={faAnglesLeft}
+                style={{ color: "orange" }}
+                className="arrow-left"
+              />
+            </>
           ) : (
             <></>
           )}
@@ -55,7 +78,18 @@ const Navbar = () => {
             <p onClick={() => setMenu("projects")}>Projects</p>
           </AnchorLink>
           {menu === "projects" ? (
-            <FontAwesomeIcon icon={faAnglesUp} style={{ color: "orange" }} />
+            <>
+              <FontAwesomeIcon
+                icon={faAnglesUp}
+                style={{ color: "orange" }}
+                className="arrow-up"
+              />
+              <FontAwesomeIcon
+                icon={faAnglesLeft}
+                style={{ color: "orange" }}
+                className="arrow-left"
+              />
+            </>
           ) : (
             <></>
           )}
@@ -65,7 +99,18 @@ const Navbar = () => {
             <p onClick={() => setMenu("volunteer")}>Volunteers</p>
           </AnchorLink>
           {menu === "volunteer" ? (
-            <FontAwesomeIcon icon={faAnglesUp} style={{ color: "orange" }} />
+            <>
+              <FontAwesomeIcon
+                icon={faAnglesUp}
+                style={{ color: "orange" }}
+                className="arrow-up"
+              />
+              <FontAwesomeIcon
+                icon={faAnglesLeft}
+                style={{ color: "orange" }}
+                className="arrow-left"
+              />
+            </>
           ) : (
             <></>
           )}

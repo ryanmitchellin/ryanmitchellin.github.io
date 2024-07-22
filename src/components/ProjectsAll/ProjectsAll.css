@@ -100,3 +100,44 @@
   font-size: 18px;
   text-align: justify;
 }
+
+@media only screen and (max-width: 420px) {
+  .projects-all {
+    gap: 50px;
+    margin: 50px 70px;
+  }
+
+  .projects-all-title h1 {
+    padding: 0;
+    font-size: 30px;
+  }
+
+  .arrow-icon {
+    width: 40px;
+  }
+
+  .projects-all-container {
+    width: 300px;
+  }
+
+  .projects-all-format {
+    width: 280px;
+  }
+
+  .projects-all-content {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .projects-all-content-left {
+    gap: 0;
+  }
+
+  .projects-all-content-left img {
+    width: 280px;
+  }
+
+  .projects-all-content-right {
+    text-align: center;
+  }
+}

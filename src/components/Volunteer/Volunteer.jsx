@@ -14,7 +14,11 @@ const Volunteer = () => {
           className="arrow-icon"
         />
         <h1>Volunteers</h1>
-        <FontAwesomeIcon icon={faAnglesLeft} style={{ color: "orange" }} />
+        <FontAwesomeIcon
+          icon={faAnglesLeft}
+          style={{ color: "orange" }}
+          className="arrow-icon"
+        />
       </div>
       <div className="volunteer-sections">
         <div className="volunteer-sect">

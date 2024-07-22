@@ -70,12 +70,39 @@
 
 @media (max-width: 768px) {
   .volunteer {
-    margin: 50px 70px;
-    align-items: start;
+    margin: 30px 70px;
   }
 
   .volunteer-title h1 {
     padding: 0;
     font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .volunteer {
+    margin: 30px 70px;
+    gap: 30px;
+  }
+
+  .arrow-icon {
+    width: 40px;
+  }
+
+  .volunteer-title h1 {
+    padding: 0;
+    font-size: 30px;
+  }
+
+  .volunteer-sect {
+    padding: 30px 40px;
+  }
+
+  .volunteer-sect h2 {
+    font-size: 28px;
+  }
+
+  .volunteer-sect h3 {
+    font-size: 20px;
   }
 }

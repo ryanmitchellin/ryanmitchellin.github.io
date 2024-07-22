@@ -11,9 +11,17 @@ function Services() {
   return (
     <div id="projects" className="projects">
       <div className="projects-title">
-        <FontAwesomeIcon icon={faAnglesRight} style={{ color: "orange" }} />
+        <FontAwesomeIcon
+          icon={faAnglesRight}
+          style={{ color: "orange" }}
+          className="arrow-icon"
+        />
         <h1>My Projects</h1>
-        <FontAwesomeIcon icon={faAnglesLeft} style={{ color: "orange" }} />
+        <FontAwesomeIcon
+          icon={faAnglesLeft}
+          style={{ color: "orange" }}
+          className="arrow-icon"
+        />
       </div>
       <div className="projects-container">
         {Projects_Data.map((project, index) => {

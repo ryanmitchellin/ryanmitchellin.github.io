@@ -29,3 +29,17 @@
     margin: 50px 70px;
   }
 }
+
+@media (max-width: 420px) {
+  .footer {
+    margin: 50px 70px;
+  }
+
+  .footer img {
+    width: 70px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}

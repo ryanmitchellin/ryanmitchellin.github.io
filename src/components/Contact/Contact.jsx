@@ -34,9 +34,17 @@ function Contact() {
   return (
     <div id="contact" className="contact">
       <div className="contact-title">
-        <FontAwesomeIcon icon={faAnglesRight} style={{ color: "orange" }} />
+        <FontAwesomeIcon
+          icon={faAnglesRight}
+          style={{ color: "orange" }}
+          className="arrow-icon"
+        />
         <h1>Get in Touch</h1>
-        <FontAwesomeIcon icon={faAnglesLeft} style={{ color: "orange" }} />
+        <FontAwesomeIcon
+          icon={faAnglesLeft}
+          style={{ color: "orange" }}
+          className="arrow-icon"
+        />
       </div>
       <div className="contact-section">
         <div className="contact-left">

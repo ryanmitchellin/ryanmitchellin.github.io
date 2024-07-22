@@ -71,6 +71,7 @@
   flex-direction: column;
   gap: 20px;
   font-size: 24px;
+  text-align: justify;
 }
 
 .about-achievements {
@@ -115,10 +116,10 @@
   transition: 0.5s;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .about {
-    margin: 50px 70px;
-    align-items: start;
+    margin: 30px 70px;
+    gap: 40px;
   }
 
   .about-title h1 {
@@ -167,5 +168,65 @@
   .about-achievement p {
     text-align: center;
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .about {
+    margin: 30px 70px;
+    gap: 40px;
+  }
+
+  .about-title h1 {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .arrow-icon {
+    width: 40px;
+  }
+
+  .about-sections {
+    flex-direction: column;
+  }
+
+  .about-left {
+    display: none;
+  }
+
+  .about-para {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .about-skill {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .about-skill p {
+    font-size: 20px;
+  }
+
+  .about-skill hr {
+    height: 6px;
+  }
+
+  .about-achievements {
+    justify-content: space-between;
+  }
+
+  .about-achievement {
+    gap: 10px;
+  }
+
+  .about-achievement h1 {
+    font-size: 34px;
+  }
+
+  .about-achievement p {
+    text-align: center;
+    font-size: 10px;
   }
 }

@@ -28,6 +28,14 @@
   .footer {
     margin: 50px 70px;
   }
+
+  .footer img {
+    width: 80px;
+  }
+
+  .footer p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 420px) {

@@ -101,6 +101,32 @@
   text-align: justify;
 }
 
+@media only screen and (max-width: 768px) {
+  .projects-all {
+    gap: 50px;
+    margin: 50px 70px;
+  }
+
+  .projects-all-content {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .projects-all-content-left {
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .projects-all-content-left img {
+    width: 400px;
+  }
+
+  .projects-all-content-right {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 420px) {
   .projects-all {
     gap: 50px;
@@ -108,6 +134,7 @@
   }
 
   .projects-all-title h1 {
+    text-align: center;
     padding: 0;
     font-size: 30px;
   }
@@ -117,6 +144,8 @@
   }
 
   .projects-all-container {
+    margin-left: 20px;
+    margin-right: 20px;
     width: 300px;
   }
 

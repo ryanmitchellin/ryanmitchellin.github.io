@@ -194,6 +194,8 @@
   }
 
   .contact-section {
+    margin-left: 70px;
+    margin-right: 70px;
     flex-direction: column;
     gap: 70px;
   }
@@ -214,18 +216,22 @@
     width: 25px;
   }
 
+  .contact-detail a{
+    font-size: 16px;
+  }
+
   .contact-right label {
     width: 90%;
     font-size: 20px;
   }
 
   .contact-right input {
-    width: 300px;
+    width: 200px;
     font-size: 20px;
   }
 
   .contact-right textarea {
-    width: 270px;
+    width: 170px;
     font-size: 20px;
   }
 

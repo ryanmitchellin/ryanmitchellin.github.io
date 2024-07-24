@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
+  const formRef = useRef(null);
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -28,6 +30,7 @@ function Contact() {
 
     if (res.success) {
       alert(res.message);
+      formRef.current.reset();
     }
   };
 
@@ -78,7 +81,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <form onSubmit={onSubmit} className="contact-right">
+        <form ref={formRef} onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="">Email</label>

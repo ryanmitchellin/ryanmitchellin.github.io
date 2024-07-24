@@ -59,6 +59,22 @@
   display: none;
 }
 
+@media only screen and (max-width: 1200px) {
+  .nav-logo {
+    width: 150px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+    font-size: 25px;
+  }
+
+  .nav-connect {
+    width: 10%;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .navbar {
     margin: 20px 50px;

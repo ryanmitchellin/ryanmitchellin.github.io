@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ProjectsAll.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +7,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Projects_Data from "../../assets/projects_data";
 
 const ProjectsAll = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="projects-all">
       <div className="projects-all-title">

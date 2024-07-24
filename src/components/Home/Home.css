@@ -56,6 +56,10 @@
   cursor: pointer;
 }
 
+.home-connect:hover {
+  border: 2px solid white;
+}
+
 .home-resume {
   padding: 25px 45px;
   border-radius: 50px;
@@ -63,14 +67,19 @@
   cursor: pointer;
   text-decoration: none;
   color: inherit;
-}
-
-.home-connect:hover {
-  border: 2px solid white;
+  transition: 0.5s;
 }
 
 .home-resume:hover {
   border-color: orange;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 769px) {
+  .home-connect {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {

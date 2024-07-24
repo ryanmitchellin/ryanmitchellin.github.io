@@ -21,7 +21,7 @@
 
 .contact-section {
   display: flex;
-  gap: 150px;
+  gap: 100px;
 }
 
 .contact-left {
@@ -81,9 +81,9 @@
 
 .contact-right input {
   border: none;
-  width: 700px;
-  height: 78px;
-  padding-left: 20px;
+  width: 680px;
+  height: 60px;
+  padding-left: 25px;
   border-radius: 4px;
   background: #32323c;
   color: #a0a0a0;
@@ -93,6 +93,7 @@
 
 .contact-right textarea {
   width: 650px;
+  height: 120px;
   border: none;
   padding: 25px;
   border-radius: 4px;
@@ -122,6 +123,13 @@
 .contact-submit:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 70px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -216,7 +224,7 @@
     width: 25px;
   }
 
-  .contact-detail a{
+  .contact-detail a {
     font-size: 16px;
   }
 

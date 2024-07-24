@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import "./ProjectsAll.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Projects_Data from "../../assets/projects_data";
+import menu_close from "../../assets/menu_close.svg";
 
 const ProjectsAll = () => {
   useEffect(() => {
@@ -13,18 +15,25 @@ const ProjectsAll = () => {
 
   return (
     <div className="projects-all">
-      <div className="projects-all-title">
-        <FontAwesomeIcon
-          icon={faAnglesRight}
-          style={{ color: "orange" }}
-          className="arrow-icon"
-        />
-        <h1>My Projects</h1>
-        <FontAwesomeIcon
-          icon={faAnglesLeft}
-          style={{ color: "orange" }}
-          className="arrow-icon"
-        />
+      <div className="title">
+        <div className="projects-all-title">
+          <FontAwesomeIcon
+            icon={faAnglesRight}
+            style={{ color: "orange" }}
+            className="arrow-icon"
+          />
+          <h1>My Projects</h1>
+          <FontAwesomeIcon
+            icon={faAnglesLeft}
+            style={{ color: "orange" }}
+            className="arrow-icon"
+          />
+        </div>
+        <div className="menu-close">
+          <Link to={"/"}>
+            <img src={menu_close} alt="" />
+          </Link>
+        </div>
       </div>
       <div className="projects-all-container">
         {Projects_Data.map((project, index) => {

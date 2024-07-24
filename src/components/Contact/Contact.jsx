@@ -82,12 +82,23 @@ function Contact() {
           </div>
         </div>
         <form ref={formRef} onSubmit={onSubmit} className="contact-right">
-          <label htmlFor="">Name</label>
-          <input type="text" placeholder="Enter your name" name="name" />
-          <label htmlFor="">Email</label>
-          <input type="email" placeholder="Enter your email" name="email" />
-          <label htmlFor="">Message</label>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            name="name"
+          />
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="email"
+            name="email"
+          />
+          <label htmlFor="message">Message</label>
           <textarea
+            id="message"
             name="message"
             rows="8"
             placeholder="Enter your message"

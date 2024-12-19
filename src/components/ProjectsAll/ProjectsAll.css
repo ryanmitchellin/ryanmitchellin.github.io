@@ -74,6 +74,11 @@
   -webkit-text-fill-color: transparent;
 }
 
+.projects-all-format video {
+  width: 300px;
+  border-radius: 10px;
+}
+
 .projects-all-content {
   display: flex;
   flex-direction: row;

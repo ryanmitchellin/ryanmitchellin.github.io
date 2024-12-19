@@ -42,7 +42,11 @@ const ProjectsAll = () => {
               <h2>{project.p_name}</h2>
               <div className="projects-all-content">
                 <div className="projects-all-content-left">
-                  <img key={index} src={project.p_img} alt="" />
+                  {project.p_name === "DermaVision AI" ? (
+                    <video key={index} src={project.p_img} autoPlay loop />
+                  ) : (
+                    <img key={index} src={project.p_img} alt="" />
+                  )}
                   <p>{project.p_lang}</p>
                   <a
                     href={project.p_website}

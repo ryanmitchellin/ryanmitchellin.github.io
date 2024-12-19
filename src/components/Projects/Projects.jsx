@@ -7,7 +7,7 @@ import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
 import Projects_Data from "../../assets/projects_data";
 
-function Services() {
+function Projects() {
   return (
     <div id="projects" className="projects">
       <div className="projects-title">
@@ -28,7 +28,16 @@ function Services() {
           return (
             <Link to={"/ProjectsAll"} key={index} className="projects-format">
               <h2>{project.p_name}</h2>
-              <img key={index} src={project.p_img} alt="" />
+              {project.p_name === "DermaVision AI" ? (
+                <video
+                key={index}
+                src={project.p_img}
+                autoPlay
+                loop
+                />
+              ) : (
+                <img key={index} src={project.p_img} alt="" />
+              )}
               <p>{project.p_lang}</p>
               <div className="projects-bottom-right">
                 <FontAwesomeIcon icon={faArrowRight} />
@@ -44,4 +53,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Projects;

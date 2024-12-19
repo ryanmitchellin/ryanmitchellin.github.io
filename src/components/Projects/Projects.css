@@ -55,6 +55,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.projects-format video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .projects-format p {
   color: #d4d4d4;
   font-size: 18px;

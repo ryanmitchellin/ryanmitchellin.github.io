@@ -26,8 +26,15 @@ const About = () => {
           <img src={profile_img} alt="" />
           <div className="about-skills">
             <div className="about-skill">
-              <p>C++ / C</p>
+              <p>C++ / Python</p>
               <hr style={{ width: "65%" }} />
+            </div>
+            <div className="about-skill">
+              <p>
+                Tensorflow /<br />
+                Pytorch
+              </p>
+              <hr style={{ width: "50%" }} />
             </div>
             <div className="about-skill">
               <p>
@@ -42,14 +49,6 @@ const About = () => {
                 TypeScript
               </p>
               <hr style={{ width: "60%" }} />
-            </div>
-            <div className="about-skill">
-              <p>Java</p>
-              <hr style={{ width: "40%" }} />
-            </div>
-            <div className="about-skill">
-              <p>SQL</p>
-              <hr style={{ width: "50%" }} />
             </div>
           </div>
         </div>

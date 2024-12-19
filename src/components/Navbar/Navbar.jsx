@@ -117,9 +117,9 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="nav-connect">
-        <AnchorLink className="anchor-link" offset={50} href="#contact">
+        <a className="anchor-link" offset={50} href="mailto:ryanvincent999@gmail.com">
           Connect With Me
-        </AnchorLink>
+        </a>
       </div>
     </div>
   );

@@ -47,10 +47,6 @@
   color: white;
 }
 
-.arrow-left {
-  display: none;
-}
-
 .nav-mob-close {
   display: none;
 }
@@ -122,12 +118,5 @@
     padding-left: 100px;
     flex-direction: row;
     gap: 20px;
-  }
-
-  .arrow-left {
-    display: inline;
-  }
-  .arrow-up {
-    display: none;
   }
 }

@@ -35,106 +35,26 @@ const Navbar = () => {
           <AnchorLink className="anchor-link" href="#home">
             <p onClick={() => {setMenu("home"); closeMenu();}}>Home</p>
           </AnchorLink>
-          {menu === "home" ? (
-            <>
-              <FontAwesomeIcon
-                icon={faAnglesUp}
-                style={{ color: "orange" }}
-                className="arrow-up"
-              />
-              <FontAwesomeIcon
-                icon={faAnglesLeft}
-                style={{ color: "orange" }}
-                className="arrow-left"
-              />
-            </>
-          ) : (
-            <></>
-          )}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#about">
             <p onClick={() => {setMenu("about"); closeMenu();}}>About</p>
           </AnchorLink>
-          {menu === "about" ? (
-            <>
-              <FontAwesomeIcon
-                icon={faAnglesUp}
-                style={{ color: "orange" }}
-                className="arrow-up"
-              />
-              <FontAwesomeIcon
-                icon={faAnglesLeft}
-                style={{ color: "orange" }}
-                className="arrow-left"
-              />
-            </>
-          ) : (
-            <></>
-          )}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#projects">
             <p onClick={() => {setMenu("projects"); closeMenu();}}>Projects</p>
           </AnchorLink>
-          {menu === "projects" ? (
-            <>
-              <FontAwesomeIcon
-                icon={faAnglesUp}
-                style={{ color: "orange" }}
-                className="arrow-up"
-              />
-              <FontAwesomeIcon
-                icon={faAnglesLeft}
-                style={{ color: "orange" }}
-                className="arrow-left"
-              />
-            </>
-          ) : (
-            <></>
-          )}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#experience">
             <p onClick={() => {setMenu("experience"); closeMenu();}}>Experiences</p>
           </AnchorLink>
-          {menu === "experience" ? (
-            <>
-              <FontAwesomeIcon
-                icon={faAnglesUp}
-                style={{ color: "orange" }}
-                className="arrow-up"
-              />
-              <FontAwesomeIcon
-                icon={faAnglesLeft}
-                style={{ color: "orange" }}
-                className="arrow-left"
-              />
-            </>
-          ) : (
-            <></>
-          )}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#volunteer">
             <p onClick={() => {setMenu("volunteer"); closeMenu();}}>Volunteers</p>
           </AnchorLink>
-          {menu === "volunteer" ? (
-            <>
-              <FontAwesomeIcon
-                icon={faAnglesUp}
-                style={{ color: "orange" }}
-                className="arrow-up"
-              />
-              <FontAwesomeIcon
-                icon={faAnglesLeft}
-                style={{ color: "orange" }}
-                className="arrow-left"
-              />
-            </>
-          ) : (
-            <></>
-          )}
         </li>
       </ul>
       <div className="nav-connect">

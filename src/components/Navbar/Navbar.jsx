@@ -33,7 +33,7 @@ const Navbar = () => {
         />
         <li>
           <AnchorLink className="anchor-link" href="#home">
-            <p onClick={() => setMenu("home")}>Home</p>
+            <p onClick={() => {setMenu("home"); closeMenu();}}>Home</p>
           </AnchorLink>
           {menu === "home" ? (
             <>
@@ -54,7 +54,7 @@ const Navbar = () => {
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#about">
-            <p onClick={() => setMenu("about")}>About</p>
+            <p onClick={() => {setMenu("about"); closeMenu();}}>About</p>
           </AnchorLink>
           {menu === "about" ? (
             <>
@@ -75,7 +75,7 @@ const Navbar = () => {
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#projects">
-            <p onClick={() => setMenu("projects")}>Projects</p>
+            <p onClick={() => {setMenu("projects"); closeMenu();}}>Projects</p>
           </AnchorLink>
           {menu === "projects" ? (
             <>
@@ -95,8 +95,29 @@ const Navbar = () => {
           )}
         </li>
         <li>
+          <AnchorLink className="anchor-link" offset={50} href="#experience">
+            <p onClick={() => {setMenu("experience"); closeMenu();}}>Experiences</p>
+          </AnchorLink>
+          {menu === "experience" ? (
+            <>
+              <FontAwesomeIcon
+                icon={faAnglesUp}
+                style={{ color: "orange" }}
+                className="arrow-up"
+              />
+              <FontAwesomeIcon
+                icon={faAnglesLeft}
+                style={{ color: "orange" }}
+                className="arrow-left"
+              />
+            </>
+          ) : (
+            <></>
+          )}
+        </li>
+        <li>
           <AnchorLink className="anchor-link" offset={50} href="#volunteer">
-            <p onClick={() => setMenu("volunteer")}>Volunteers</p>
+            <p onClick={() => {setMenu("volunteer"); closeMenu();}}>Volunteers</p>
           </AnchorLink>
           {menu === "volunteer" ? (
             <>

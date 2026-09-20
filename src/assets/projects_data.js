@@ -3,18 +3,50 @@ import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
+import project6 from "../assets/project6.png";
+import project7 from "../assets/project7.png";
 import video1 from "../assets/video1.mp4";
 
 const Projects_Data = [
   {
     p_name: "DermaVision AI",
-    p_lang: "Tensorflow, Keras, Javascript, Flask",
+    p_lang: "Python, Tensorflow, Keras, Javascript, Flask",
     p_img: video1,
     p_det1:
       "As part of a collaborative team of five, we developed an advanced image classification model to identify skin lesions such as Cowpox, HFMD, Measles, Chickenpox, Monkeypox, and Healthy skin conditions. Leveraging Convolutional Neural Networks (CNN), the model was trained using a comprehensive Kaggle dataset, with cross-validation and hyperparameter tuning via random search to enhance accuracy and robustness. This effort ensured reliable classification outcomes, making it a valuable tool for medical reference.",
     p_det2:
       "The trained Keras model was seamlessly integrated into a user-friendly web application built with Flask. This platform allows users to upload skin lesion images, which are processed and classified in real time. By providing accurate predictions, the application serves as a practical reference tool for patients who may not have immediate access to a healthcare provider. This project highlights the potential of AI in delivering accessible medical support and fostering early diagnosis.",
     p_website: "https://github.com/ryanmitchellin/DermaVision-AI",
+  },
+  {
+    p_name: "AI YouTube Shorts Generator",
+
+    p_lang: "Python, Groq API, Cloudflare FLUX API, Edge TTS",
+
+    p_img: project7,
+
+    p_det1:
+      "This project focused on developing an end-to-end text-to-video pipeline that converts titles and scripts into vertical YouTube Shorts using AI-generated narration, images, subtitles, and automated video composition. The system streamlines the content creation process by combining multiple AI services into a single workflow.",
+
+    p_det2:
+      "The project integrated AI APIs and media-processing tools to automate content generation, synchronize narration with subtitles, and assemble visual elements into ready-to-upload short-form videos. The pipeline also incorporated caching and fallback mechanisms to improve reliability and reduce unnecessary API usage during content generation.",
+
+    p_website: "https://github.com/ryanmitchellin",
+  },
+  {
+    p_name: "Multi-Agent Path Finding with Heuristics",
+
+    p_lang: "Python, CBS, A*, MDD, PuLP",
+
+    p_img: project6,
+
+    p_det1:
+      "This project focused on solving Multi-Agent Path Finding (MAPF) problems by coordinating multiple agents to find collision-free paths in a shared environment. Working in a team of 3, we implemented several Conflict-Based Search (CBS) approaches, including Standard CBS, Disjoint CBS, and heuristic-enhanced variants using Cardinality Graphs (CG), Dependency Graphs (DG), and Weighted Dependency Graphs (WDG).",
+
+    p_det2:
+      "The project evaluated the effectiveness of different search strategies and admissible heuristics for improving MAPF performance. I specifically implemented the WDG heuristic using Multi-valued Decision Diagrams (MDDs), dependency graphs, and weighted vertex cover optimization with PuLP. The heuristic reduced high-level node expansions and improved runtime compared with standard CBS while preserving optimality.",
+
+    p_website: "https://github.com/ryanmitchellin/MAPF-with-Heuristics",
   },
   {
     p_name: "Chess Prediction Optimization",

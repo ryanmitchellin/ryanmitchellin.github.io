@@ -10,11 +10,11 @@ function Hero() {
       <img src={profile_img} alt="" />
       <h1>
         <span>I'm Ryan Mitchellin,</span>
-        <br /> a Computing Science student based in Canada.
+        <br /> a Computing Science and Mathematics graduate.
       </h1>
       <p>
-        I am currently seeking for co-op / internship opportunities to further
-        develop my skills and gain more hands-on experience.
+        I am a recent graduate from Simon Fraser University, combining computing, quantitative, 
+        and analytical skills across technology, data, and actuarial applications.
       </p>
       <div className="home-action">
         <div className="home-connect">

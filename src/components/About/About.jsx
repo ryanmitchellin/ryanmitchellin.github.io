@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import profile_img from "../../assets/profile.png";
+import resume from "../../assets/resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
@@ -26,66 +27,54 @@ const About = () => {
           <img src={profile_img} alt="" />
           <div className="about-skills">
             <div className="about-skill">
-              <p>C++ / Python</p>
-              <hr style={{ width: "65%" }} />
+              <p><b>Programming:</b> Python | C++ | Java | JavaScript | TypeScript</p>
             </div>
+
             <div className="about-skill">
-              <p>
-                Tensorflow /<br />
-                Pytorch
-              </p>
-              <hr style={{ width: "50%" }} />
+              <p><b>Web Development:</b> ReactJS | Angular | HTML | CSS</p>
             </div>
+
             <div className="about-skill">
-              <p>
-                ReactJS /<br />
-                Angular
-              </p>
-              <hr style={{ width: "50%" }} />
+              <p><b>Data & AI:</b> SQL | Data Analysis | Machine Learning</p>
             </div>
+
             <div className="about-skill">
-              <p>
-                Javascript /<br />
-                TypeScript
-              </p>
-              <hr style={{ width: "60%" }} />
+              <p><b>Quantitative:</b> Statistics | Financial Math | Risk Modeling</p>
+            </div>
+            <div className="about-skill-note">
+                <a href={resume} target="_blank" rel="noopener noreferrer">
+                More details...
+                </a>
             </div>
           </div>
         </div>
         <div className="about-right">
           <div className="about-para">
             <p>
-              Hello, I'm Ryan, a passionate Computing Science student at Simon
-              Fraser University with a strong desire to innovate within the tech
-              industry, particularly in enhancing the field of artificial
-              intelligence. My journey in computing science has been defined by
-              a solid academic foundation, extensive practical project
-              experience, and active involvement in volunteering.
+              Hello, I'm Ryan, a recent Computing Science graduate from Simon Fraser University 
+              with a Mathematics minor. I have developed a strong foundation in programming, 
+              data analysis, probability, financial mathematics, and machine learning through 
+              coursework and hands-on projects.
             </p>
             <p>
-              As a manager of the FIC Peer Education community, I have led
-              numerous workshops on self-improvement for students, conducted new
-              member interviews, and represented FIC in formal meetings with
-              MLAs, FIC stakeholders, and SFU faculty departments. My primary
-              responsibility involves managing and organizing my team to assist
-              fellow students facing challenges not only academically but also
-              to support students with interpersonal skills.
+              Beyond academics, I served as a Peer Education Manager at SFU's FIC, where I led 
+              a team of 30 tutors and mentors supporting approximately 300 students each semester. 
+              I organized workshops, participated in interviews and leadership training, and worked 
+              with students and faculty to support academic and personal development.
             </p>
             <p>
-              I bring to the table a diverse skill set, a value for leadership,
-              communication skills, and a strong work ethic. I am always open to
-              discussing any tech-related problems and opportunities to
-              contribute to meaningful projects. Let's connect and explore how
-              we can collaborate to drive innovation and positive change in the
-              tech industry.
+              I enjoy applying analytical and technical skills to practical problems and collaborating 
+              with others to develop effective solutions. I am open to opportunities across technology, 
+              data, quantitative analysis, actuarial science, and related fields where I can continue 
+              learning and contribute to meaningful work.
             </p>
           </div>
         </div>
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-          <h1>3+</h1>
-          <p>YEARS OF EXPERIENCE</p>
+          <h1>30+</h1>
+          <p>TEAM MEMBERS LED</p>
         </div>
         <hr />
         <div className="about-achievement">
@@ -94,8 +83,8 @@ const About = () => {
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>5+</h1>
-          <p>ACADEMIC AWARDS</p>
+          <h1>2</h1>
+          <p>SOA EXAMS PASSED</p>
         </div>
       </div>
     </div>

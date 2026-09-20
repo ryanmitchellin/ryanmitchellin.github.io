@@ -27,43 +27,65 @@
 .about-left {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
 }
 
 .about-left img {
-  width: 300px;
+  width: 365px;
   border-radius: 10px;
 }
 
 .about-skills {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+  width: 365px;
 }
 
 .about-skill {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  gap: 6px;
+  flex-direction: column;
   transition: 0.3s;
 }
 
 .about-skill p {
-  min-width: 80px;
-  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
 }
 
-.about-skill hr {
-  outline: none;
-  border: none;
-  height: 10px;
-  border-radius: 50px;
+.about-skill p b {
   background: linear-gradient(
-    30deg,
+    90deg,
     rgba(223, 64, 9, 1) 0%,
     rgba(244, 154, 3, 1) 80%,
     rgba(255, 220, 0, 1) 100%
   );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-skill:hover {
+  transform: translateX(5px);
+  transition: 0.3s;
+}
+
+.about-skill-note {
+  margin-top: 10px;
+  font-size: 14px;
+  /* text-align: center; */
+}
+
+.about-skill-note a {
+  text-decoration: none;
+  font-weight: 600;
+  color: grey;
+}
+
+.about-skill-note a:hover {
+  opacity: 0.8;
 }
 
 .about-para {
